@@ -34,7 +34,7 @@ geolinkemb: $(GEOLINKEMBOBJS)
 	$(GEOLINKEMBOBJS) geos-cbm.lib
 	
 clean:
-	rm -f *.o geoLink.cvt geoLinkEmbed.cvt *.map *.lbl
+	rm -f *.o *.cvt *.map *.lbl
 
 distclean: clean
 	rm -f *~
