@@ -26,18 +26,18 @@ To manually install from this repository, inside the bin folder is a cc65 compil
 
 geoLink reports network errors by hex code which can be found in IP65's ip65.h.  The error codes are:
 
-	IP65_ERROR_PORT_IN_USE						0x80
-	IP65_ERROR_TIMEOUT_ON_RECEIVE				0x81
-	IP65_ERROR_TRANSMIT_FAILED					0x82
-	IP65_ERROR_TRANSMISSION_REJECTED_BY_PEER	0x83
-	IP65_ERROR_INPUT_TOO_LARGE					0x84
-	IP65_ERROR_DEVICE_FAILURE					0x85
-	IP65_ERROR_ABORTED_BY_USE					0x86
-	IP65_ERROR_LISTENER_NOT_AVAILABLE			0x87
-	IP65_ERROR_CONNECTION_RESET_BY_PEER			0x89
-	IP65_ERROR_CONNECTION_CLOSED				0x8A
-	IP65_ERROR_MALFORMED_URL					0xA0
-	IP65_ERROR_DNS_LOOKUP_FAILED 				0xA1
+	IP65_ERROR_PORT_IN_USE                   0x80
+	IP65_ERROR_TIMEOUT_ON_RECEIVE            0x81
+	IP65_ERROR_TRANSMIT_FAILED               0x82
+	IP65_ERROR_TRANSMISSION_REJECTED_BY_PEER 0x83
+	IP65_ERROR_INPUT_TOO_LARGE               0x84
+	IP65_ERROR_DEVICE_FAILURE                0x85
+	IP65_ERROR_ABORTED_BY_USER               0x86
+	IP65_ERROR_LISTENER_NOT_AVAILABLE        0x87
+	IP65_ERROR_CONNECTION_RESET_BY_PEER      0x89
+	IP65_ERROR_CONNECTION_CLOSED             0x8A
+	IP65_ERROR_MALFORMED_URL                 0xA0
+	IP65_ERROR_DNS_LOOKUP_FAILED             0xA1
 
 
 ## Compiling geoLink
@@ -92,15 +92,15 @@ Launch GEOS and run geoLinkEmbed. This will embed the TCP/IP stack (ip65-geos) i
 
 Following is the memory layout of the various modules for geoLink 1.01.  If addtional code is added to any of the modules, be sure to check the generated geoLink.map file to make sure there are no memory overlaps.  The start address for the overlay modules can be updated in the geos-cbm.cfg file.  IP65 can only be relocated by recompiling IP65.
 
-	Module						Start	End
+	Module                      Start   End
 	=========================================
-	geoLinkRes + geoLinkVal		0400	0F97 
-	Overlay1 - geoLinkSetup		0FA7	1A2F
-	Overlay2 - geoLinkPing		0FA7	151D
-	Overlay3 - geoLinkLogin		0FA7	1614
-	Overlay4 - geoLinkIRC		0FA7	2C52
-	Overlay8 - Font				2C53	31F6 *
-	Overlay9 - IP65				3300	4FE6
+	geoLinkRes + geoLinkVal     0400    0F97 
+	Overlay1 - geoLinkSetup     0FA7    1A2F
+	Overlay2 - geoLinkPing      0FA7    151D
+	Overlay3 - geoLinkLogin     0FA7    1614
+	Overlay4 - geoLinkIRC       0FA7    2C52
+	Overlay8 - Font             2C53    31F6 *
+	Overlay9 - IP65             3300    4FE6
 
 * The font data is 1444 bytes and is loaded at the end of geoLinkIRC when the IRC module is launched.
 
