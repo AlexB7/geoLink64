@@ -1,5 +1,17 @@
+; -----------------------------------------------------------
+; geoLink: GEOS 64 IRC client
+;
+; Written by Glenn Holmer (a.k.a "Shadow", a.k.a "Cenbe")
+; -----------------------------------------------------------
 
+; MOD_IRC
+.segment	"OVERLAY4"
 
+; Contains:
+; geoLinkIRC.s
+; geoLinkParse.s
+; geoLinkText.s
+; geoLinkIRCd.s
 
 ; MOD_IRC
 .segment	"OVERLAY4"

@@ -1,4 +1,8 @@
-
+; -----------------------------------------------------------
+; geoLink: GEOS 64 IRC client
+;
+; Written by Glenn Holmer (a.k.a "Shadow", a.k.a "Cenbe")
+; -----------------------------------------------------------
 
 ; -----------------------------------------------------------
 ; geoLinkEmbed: embed IP stack and mono font in geoLink

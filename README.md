@@ -41,7 +41,7 @@ The following libraries are required from the cc65 project, which can be found a
 
 	geossym2.inc
 
-Note:  cc65 will create a vice symbol file (geoLink.lbl) with all lables (eg: io := $d000), but it does not include constants (eg: two = 2).  To make debugging easier, modify geossym.inc, geossym2.inc and jumptab.inc by changing all '=' to ':=' so that they are all added to the symbol file.
+Note:  cc65 will create a Vice symbol file (geoLink.lbl) with all lables (eg: io := $d000), but it does not include constants (eg: two = 2).  To make debugging easier, modify geossym.inc, geossym2.inc and jumptab.inc by changing all '=' to ':=' so that they are all added to the symbol file.
 
 The button bitmap data is contained inside the main source files (geoLinkIRC.s, geoLinkPing etc).  If the .png/.pcx source images are changed, they need to be recompiled using sp65 and then manually added to source files.  If needed, use Gimp to convert from .png to .pcx.
 
