@@ -1,0 +1,8 @@
+
+
+HEADER APPLICATION "geoLinkEmbed" "geoLinkEmbed" "V1.0" {
+	dostype USR
+	author "ShadowM"
+	info "Embeds IP stack and mono font."
+	icon "icon-program.bin"
+}

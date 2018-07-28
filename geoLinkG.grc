@@ -1,0 +1,16 @@
+
+
+HEADER APPLICATION "geoLink" "geoLink" "V1.0" {
+	dostype USR
+	structure VLIR
+
+	author "ShadowM"
+	info "Links GEOS users together over the 'net."
+	icon "icon-program.bin"
+}
+MEMORY {
+	stacksize   0x0200
+	overlaysize 0x2200
+	backbuffer 	no
+	overlaynums 1 2 3 4 8 9
+}
