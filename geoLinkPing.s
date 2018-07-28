@@ -1,5 +1,6 @@
 ; -----------------------------------------------------------
-; geoLink: GEOS 64 IRC client
+; geoLink: A networked GEOS application for the Commodore 64 
+;          which includes an IRC client.
 ;
 ; Written by Glenn Holmer (a.k.a "Shadow", a.k.a "Cenbe")
 ; -----------------------------------------------------------
@@ -36,12 +37,6 @@ PNG_HIGH	=	84
 PNG_WIDE	=	176
 TTL_HIGH	=	12
 ; -----------------------------------------------------------
-
-.segment	"OVERLAY2"
-
-.proc	modPing: near
-
-.segment	"OVERLAY2"
 
 modPing:	lda	#2	;50% stipple
 	jsr	SetPattern
@@ -87,8 +82,6 @@ modPing:	lda	#2	;50% stipple
 	jsr	DoIcons
 	jmp	getPngIp
 
-.endproc
-	
 ; -----------------------------------------------------------
 ; set up for ping address input
 ; -----------------------------------------------------------

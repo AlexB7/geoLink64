@@ -1,5 +1,6 @@
 ; -----------------------------------------------------------
-; geoLink: GEOS 64 IRC client
+; ; geoLink: A networked GEOS application for the Commodore 64 
+;          which includes an IRC client.
 ;
 ; Written by Glenn Holmer (a.k.a "Shadow", a.k.a "Cenbe")
 ; -----------------------------------------------------------

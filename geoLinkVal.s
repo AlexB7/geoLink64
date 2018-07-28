@@ -1,5 +1,6 @@
 ; -----------------------------------------------------------
-; geoLink: GEOS 64 IRC client
+; geoLink: A networked GEOS application for the Commodore 64 
+;          which includes an IRC client.
 ;
 ; Written by Glenn Holmer (a.k.a "Shadow", a.k.a "Cenbe")
 ; -----------------------------------------------------------
@@ -16,14 +17,12 @@
 	.export		bin2hex
 	.export		byte2asc
 	.export		hexChars
-;	.export		modLoad
 	.export		valIp
 	.export		valMac
 	.export		valWork
 	.export		modLoad
 
-;modLoad		= 	$1400	
-modLoad		= 	$fa7	
+modLoad		= 	$fa7	; Location for overlays, just above main program.
 	
 ; -----------------------------------------------------------
 ; Validate an input field as an IP address ("dotted quad"). Binary 
