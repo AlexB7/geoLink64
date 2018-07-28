@@ -11,19 +11,19 @@
 ; -----------------------------------------------------------
 ; geoLinkLogin (login dialog for geoLink IRC module)
 ; -----------------------------------------------------------
-	.forceimport	bServer
-	.forceimport	ip65
-	.forceimport	dnsStrc
-	.forceimport	bPort
-	.forceimport	errorMsg
-	.forceimport	mainMenu
-	.forceimport	optWord
-	.forceimport	optMenu
-	.forceimport	loadIRC
-	.forceimport	noIcons
-	.forceimport	server
-	.forceimport	errorDB
-	.forceimport	strWidth
+	.import	bServer
+	.import	ip65
+	.import	dnsStrc
+	.import	bPort
+	.import	errorMsg
+	.import	mainMenu
+	.import	optWord
+	.import	optMenu
+	.import	loadIRC
+	.import	noIcons
+	.import	server
+	.import	errorDB
+	.import	strWidth
 	.include	"geoLink.inc"
 	.include	"geosmac.inc"
 	.include	"geossym.inc"

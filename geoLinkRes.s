@@ -8,9 +8,9 @@
 ; -----------------------------------------------------------
 ; geoLinkRes: geoLink resident module (VLIR)
 ; -----------------------------------------------------------
-	.forceimport	__STARTUP__
-	.forceimport	bin2hex
-	.forceimport	modLoad
+	.import	__STARTUP__
+	.import	bin2hex
+	.import	modLoad
 	.export		_main
 	.export		bServer
 	.export		autoVect

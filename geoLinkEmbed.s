@@ -8,7 +8,7 @@
 ; -----------------------------------------------------------
 ; geoLinkEmbed: embed IP stack and mono font in geoLink
 ; -----------------------------------------------------------
-	.forceimport	__STARTUP__
+	.import	__STARTUP__
 	.export		_main
 	.include	"geoLink.inc"
 	.include	"geosmac.inc"

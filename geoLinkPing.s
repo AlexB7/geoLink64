@@ -11,19 +11,19 @@
 ; -----------------------------------------------------------
 ; geoLinkPing (ping module for geoLink)
 ; -----------------------------------------------------------
-	.forceimport	mainMenu
-	.forceimport	optMenu
-	.forceimport	optWord
-	.forceimport	ip65
-	.forceimport	dnsStrc
-	.forceimport	beep
-	.forceimport	errorDB
-	.forceimport	errorMsg
-	.forceimport	bankNet
-	.forceimport	bankRst
-	.forceimport	bin2hex
-	.forceimport	pingAddr
-	.forceimport	strWidth
+	.import	mainMenu
+	.import	optMenu
+	.import	optWord
+	.import	ip65
+	.import	dnsStrc
+	.import	beep
+	.import	errorDB
+	.import	errorMsg
+	.import	bankNet
+	.import	bankRst
+	.import	bin2hex
+	.import	pingAddr
+	.import	strWidth
 	.include	"geoLink.inc"
 	.include	"geosmac.inc"
 	.include	"geossym.inc"

@@ -11,29 +11,29 @@
 ; -----------------------------------------------------------
 ; geoLinkSetup (setup module for geoLink)
 ; -----------------------------------------------------------
-	.forceimport	mainMenu
-	.forceimport	optMenu
-	.forceimport	optWord
-	.forceimport	errHndlr
-	.forceimport	setupOK
-	.forceimport	setName
-	.forceimport	okDB
-	.forceimport	okMsg
-	.forceimport	cfg2geos
-	.forceimport	noDhcp
-	.forceimport	ip65
-	.forceimport	cfg2ip65
-	.forceimport	errorDB
-	.forceimport	errorMsg
-	.forceimport	valIp
-	.forceimport	macAddr
-	.forceimport	valMac
-	.forceimport	strWidth
-	.forceimport	hexChars
-	.forceimport	byte2asc
-	.forceimport	valWork
-	.forceimport	ipAddr
-	.forceimport	dhcp
+	.import	mainMenu
+	.import	optMenu
+	.import	optWord
+	.import	errHndlr
+	.import	setupOK
+	.import	setName
+	.import	okDB
+	.import	okMsg
+	.import	cfg2geos
+	.import	noDhcp
+	.import	ip65
+	.import	cfg2ip65
+	.import	errorDB
+	.import	errorMsg
+	.import	valIp
+	.import	macAddr
+	.import	valMac
+	.import	strWidth
+	.import	hexChars
+	.import	byte2asc
+	.import	valWork
+	.import	ipAddr
+	.import	dhcp
 	.include	"geoLink.inc"
 	.include	"geosmac.inc"
 	.include	"geossym.inc"

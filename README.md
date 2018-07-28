@@ -90,7 +90,7 @@ Copy the following files to a .d64, d71 or .d81 image file using DirMaster or an
 
 Launch GEOS and run geoLinkEmbed. This will embed the TCP/IP stack (ip65-geos) into VLIR record 9 of the geoLink executable and the monospaced font (VIP64-mono) into record 8.  You should now have a working copy of geoLink.
 
-Following is the memory layout of the various modules for geoLink 1.01.  If addtional code is added to any of the modules, be sure to check the generated geoLink.map file to make sure there are no memory overlaps.  The start address for the overlay modules can be updated in the geos-cbm.cfg file.  IP65 can only be relocated by recompiling IP65.
+Following is the memory layout of the various modules for geoLink 1.01.  If addtional code is added to any of the modules, be sure to check the generated geoLink.map file to make sure there are no memory overlaps.  To change the start address for the overlay modules, change the __OVERLAYADDR__ value in geos-cbm.cfg and the modLoad label in geoLinkVal.s.  IP65 can only be relocated by recompiling IP65.
 
 	Module                      Start   End
 	=========================================

@@ -22,7 +22,7 @@
 	.export		valWork
 	.export		modLoad
 
-modLoad		= 	$fa7	; Location for overlays, just above main program.
+modLoad		:= 	$fa7	; Location for overlays, just above main program.
 	
 ; -----------------------------------------------------------
 ; Validate an input field as an IP address ("dotted quad"). Binary 
@@ -286,6 +286,5 @@ byte2asc:	sta	a0L
 ; -----------------------------------------------------------
 valWork:	.res	6	;work area for validation
 hexChars:	.byte	"0123456789abcdefABCDEF"
-;modLoad:	.byte	0	;marker for loading modules
-;modLoad:	.word	$6000	;marker for loading modules
+
 

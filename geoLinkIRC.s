@@ -14,14 +14,9 @@
 ; geoLinkText.s
 ; geoLinkIRCd.s
 
-; MOD_IRC
-.segment	"OVERLAY4"
-
 ; -----------------------------------------------------------
 ; geoLinkIRC (IRC module for geoLink)
-; -----------------------------------------------------------
-
-		
+; -----------------------------------------------------------	
 	.include	"geoLink.inc"
 	.include	"geosmac.inc"
 	.include	"geossym.inc"
@@ -29,36 +24,34 @@
 	.include	"const.inc"
 	.include	"jumptab.inc"
 	
-	.forceimport		beep
-	.forceimport		debug
-	.forceimport		optMenu
-	.forceimport		bankNet
-	.forceimport		tcpStrc
-	.forceimport		bankRst
-	.forceimport		tcpSend
-	.forceimport		byte2asc
-	.forceimport		ipAddr
-	.forceimport		nick
-	.forceimport		ipData
-	.forceimport		errorDB
-	.forceimport		impDlg
-	.forceimport		errorMsg
-	.forceimport		bin2hex
-	.forceimport		strWidth
-	.forceimport		ip65
-	.forceimport		bPort
-	.forceimport		tcpConn
-	.forceimport		bServer
-	.forceimport		swapMod
-	.forceimport		geosMenu
-	.forceimport		chatting
-	.forceimport		autoVect
-	.forceimport		mainMenu
-	.forceimport		optWord
-	.forceimport		geosWord
+	.import		beep
+	.import		debug
+	.import		optMenu
+	.import		bankNet
+	.import		tcpStrc
+	.import		bankRst
+	.import		tcpSend
+	.import		byte2asc
+	.import		ipAddr
+	.import		nick
+	.import		ipData
+	.import		errorDB
+	.import		impDlg
+	.import		errorMsg
+	.import		bin2hex
+	.import		strWidth
+	.import		ip65
+	.import		bPort
+	.import		tcpConn
+	.import		bServer
+	.import		swapMod
+	.import		geosMenu
+	.import		chatting
+	.import		autoVect
+	.import		mainMenu
+	.import		optWord
+	.import		geosWord
 
-;vipFont = $5050	
-	
 ; -----------------------------------------------------------
 MOD_FONT	=	8	;VLIR record for mono font
 SCR_WD	=	40	;width of text area in cards
